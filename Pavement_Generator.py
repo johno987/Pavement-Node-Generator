@@ -186,6 +186,8 @@ root.title("ANSYS Pavement Node Generator")
 pavement_type_var = tk.StringVar(value="Flexible")
 pavement_type_var.trace_add("write", on_pavement_change)
 
+#added my label here if it breaks remove it
+tk.Label(root, text='Software created by W.Johnson').grid(row=7, column=0, padx=5, pady=30, sticky='e')
 tk.Label(root, text="Select Pavement Type:").grid(row=0, column=0, padx=5, pady=5, sticky="e")
 ptype_menu = tk.OptionMenu(root, pavement_type_var, "Flexible", "Rigid", "Semi-Rigid")
 ptype_menu.grid(row=0, column=1, padx=5, pady=5, sticky="w")
